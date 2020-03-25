@@ -13,12 +13,13 @@ import java.util.Collections;
  * HINT, you might want to subclass this more than once.
  * The group of cards has a maximum size attribute which is flexible for reuse.
  * @author dancye
+ * @modifier es-romo, March 25,2020
  */
 public class GroupOfCards 
 {
    
     //The group of cards, stored in an ArrayList
-    private ArrayList <Card> cards;
+    protected ArrayList <Card> cards;
     private int size;//the size of the grouping
     
     public GroupOfCards(int givenSize)

@@ -10,6 +10,7 @@ package ca.sheridancollege.project;
  * enough to be instantiated for any Card game. Students wishing to add to the code 
  * should remember to add themselves as a modifier.
  * @author dancye
+ * @modifier es-romo, March 25,2020
  */
 public abstract class Card 
 {
@@ -22,5 +23,13 @@ public abstract class Card
     
     @Override
     public abstract String toString();
+
+    public abstract FrenchCard.Suits getSuit();
+
+    public abstract void setSuit(FrenchCard.Suits suit);
+
+    public abstract FrenchCard.Ranks getRank();
+
+    public abstract void setRank(FrenchCard.Ranks rank);
     
 }
