@@ -13,9 +13,9 @@ package ca.sheridancollege.project;
 public abstract class Player 
 {
     private String playerID; //the unique ID for this player
-    private Deck hand; //the unique ID for this player
+    private Hand hand; //the unique ID for this player
 
-    protected Deck getHand() {
+    protected Hand getHand() {
         return hand;
     }
 
