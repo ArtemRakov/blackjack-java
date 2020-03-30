@@ -2,7 +2,7 @@
  * SYST17796 Project, Winter 2020.
  * Blackjack
  */
-package ca.sheridancollege.project;
+package com.estebanromo.blackjack;
 
 /**
  * Models a 52 deck of FrenchCards

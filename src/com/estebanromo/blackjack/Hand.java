@@ -2,7 +2,7 @@
  * SYST17796 Project, Winter 2020.
  * Blackjack
  */
-package ca.sheridancollege.project;
+package com.estebanromo.blackjack;
 
 /**
  * Extends GroupOfCards, add player hand functionality

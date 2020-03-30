@@ -1,4 +1,4 @@
-package ca.sheridancollege.project;
+package com.estebanromo.blackjack;
 
 public interface Viewer {
     void displayStart();
