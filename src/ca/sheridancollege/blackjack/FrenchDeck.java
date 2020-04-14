@@ -10,7 +10,7 @@ package ca.sheridancollege.blackjack;
  * @author es-romo
  */
 public class FrenchDeck extends GroupOfCards {
-    private static int maxSize = FrenchCard.Ranks.values().length * FrenchCard.Suits.values().length;
+    public static int maxSize = FrenchCard.Ranks.values().length * FrenchCard.Suits.values().length;
 
     FrenchDeck() {
         super(maxSize);
