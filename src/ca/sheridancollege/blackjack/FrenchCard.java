@@ -2,7 +2,7 @@
  * SYST17796 Project, Winter 2020.
  * Blackjack
  */
-package com.estebanromo.blackjack;
+package ca.sheridancollege.blackjack;
 
 /**
  * Models a typical french card. Can be any combination of ranks and suits. No jokers.

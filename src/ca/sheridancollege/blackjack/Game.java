@@ -3,34 +3,30 @@
  * Students can modify and extend to implement their game.
  * Add your name as a modifier and the date!
  */
-package com.estebanromo.blackjack;
+package ca.sheridancollege.blackjack;
 
 import java.util.ArrayList;
 
 /**
  * The class that models your game. You should create a more specific
  * child of this class and instantiate the methods given.
+ *
  * @author dancye
  * @modifier es-romo, March 25,2020
  */
-public abstract class Game 
-{
+public abstract class Game {
     private final String gameName;//the title of the game
-    private ArrayList <Player> players = new ArrayList<>();// the players of the game
-    private Viewer view;//Interface for the game
-    
-    public Game(String givenName, Viewer view)
-    {
+    private ArrayList<Player> players;// the players of the game
+
+
+    public Game(String givenName) {
         this.gameName = givenName;
-        this.view = view;
-        //this.players = new ArrayList();
     }
 
     /**
      * @return the gameName
      */
-    public String getGameName() 
-    {
+    public String getGameName() {
         return gameName;
     }
     
@@ -62,6 +58,4 @@ public abstract class Game
      */
     public abstract void declareWinner();
 
-   
-    
 }//end class

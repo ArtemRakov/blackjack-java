@@ -2,21 +2,23 @@
  * SYST17796 Project, Winter 2020.
  * Blackjack
  */
-package com.estebanromo.blackjack;
+package ca.sheridancollege.blackjack;
 
 /**
  * Models a 52 deck of FrenchCards
+ *
  * @author es-romo
  */
-public class Deck extends GroupOfCards{
-    public static int maxSize = FrenchCard.Ranks.values().length * FrenchCard.Suits.values().length;
+public class FrenchDeck extends GroupOfCards {
+    private static int maxSize = FrenchCard.Ranks.values().length * FrenchCard.Suits.values().length;
 
-    Deck(){
+    FrenchDeck() {
         super(maxSize);
         for (FrenchCard.Suits suit : FrenchCard.Suits.values()) {
             for (FrenchCard.Ranks rank : FrenchCard.Ranks.values()) {
-                this.cards.add(new FrenchCard(suit,rank));
+                this.cards.add(new FrenchCard(suit, rank));
             }
         }
+        this.shuffle();
     }
 }
