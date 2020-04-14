@@ -24,7 +24,11 @@ public class GroupOfCards {
     protected ArrayList<Card> cards;
 
     public GroupOfCards() {
-        cards = new ArrayList<>();
+        this.cards = new ArrayList<>();
+    }
+
+    public GroupOfCards(ArrayList<Card> cards) {
+        this.cards = cards;
     }
 
     /**

@@ -29,7 +29,7 @@ public class Player {
     /**
      * A class that simulates the player 'hitting'
      */
-    public void hit(FrenchDeck deck) {
+    public void hit(GroupOfCards deck) {
         if (deck.getSize() == 0)
             throw new ArithmeticException("Cant hit over and empty deck");
         hand.push(deck.pop());
