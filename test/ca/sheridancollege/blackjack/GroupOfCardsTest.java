@@ -41,12 +41,22 @@ public class GroupOfCardsTest {
     }
 
     @Test
-    public void calcScore() {
+    public void calcScorePositive() {
        FrenchCard ace = new FrenchCard(FrenchCard.Suits.Diamonds, FrenchCard.Ranks.Ace);
        FrenchCard three = new FrenchCard(FrenchCard.Suits.Hearts, FrenchCard.Ranks.Three);
        ArrayList<Card> cards = new ArrayList<>(Arrays.asList(ace, three));
        GroupOfCards groupOfCards = new GroupOfCards(cards);
 
        assertEquals(groupOfCards.calcScore(), 4);
+    }
+
+    @Test
+    public void calcScoreNegative() {
+        FrenchCard ace = new FrenchCard(FrenchCard.Suits.Diamonds, FrenchCard.Ranks.Ace);
+        FrenchCard three = new FrenchCard(FrenchCard.Suits.Hearts, FrenchCard.Ranks.Three);
+        ArrayList<Card> cards = new ArrayList<>(Arrays.asList(ace, three));
+        GroupOfCards groupOfCards = new GroupOfCards(cards);
+
+        assertNotEquals(groupOfCards.calcScore(), 5);
     }
 }

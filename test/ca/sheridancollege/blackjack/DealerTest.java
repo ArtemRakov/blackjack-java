@@ -24,6 +24,20 @@ public class DealerTest {
     }
 
     @Test
+    public void decideBoundary() {
+        FrenchCard ten = new FrenchCard(FrenchCard.Suits.Diamonds, FrenchCard.Ranks.Ten);
+        FrenchCard six = new FrenchCard(FrenchCard.Suits.Hearts, FrenchCard.Ranks.Six);
+        ArrayList<Card> cards = new ArrayList<>(Arrays.asList(ten, six));
+        GroupOfCards deck = new GroupOfCards(cards);
+        Dealer dealer = new Dealer();
+
+        dealer.hit(deck);
+        dealer.hit(deck);
+
+        assertEquals(dealer.decide(), 1);
+    }
+
+    @Test
     public void decidePositive() {
         FrenchCard ace = new FrenchCard(FrenchCard.Suits.Diamonds, FrenchCard.Ranks.Ace);
         FrenchCard three = new FrenchCard(FrenchCard.Suits.Hearts, FrenchCard.Ranks.Three);
